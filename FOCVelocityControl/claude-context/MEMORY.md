@@ -1,0 +1,6 @@
+- [CAN motor control working](can-motor-control-working.md) — ESP32→ESC1 CAN velocity control confirmed working end-to-end on real motor; SimpleCanLib was the root cause of the earlier multi-day failure
+- [CAN protocol details](can-protocol-details.md) — wiring, protocol byte layout, meFDCAN patches, and file locations for the working CAN link
+- [BLE joystick bridge working](ble-joystick-bridge-working.md) — joystick-on-Feather → BLE → ESP32 → CAN → ESC1 confirmed working; Feather must be BLE peripheral (nRF51 can't be central), dead-module IRQ-probe diagnostic technique
+- [SimpleFOC weak-symbol linking](simplefoc-weak-symbol-linking.md) — driver.init() fails silently without lib_archive = no
+- [G431 closed-loop position map](g431-closed-loop-position-map.md) — encoder→electrical map is nonlinear; needs a measured correction table, SimpleFOC's motor layer bypassed
+- [Wait for hardware confirmation](wait-for-hardware-confirmation.md) — ask, then wait for the user's reply before running a test needing a physical change; no timed windows
